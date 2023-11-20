@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const redirToggle = document.createElement('input');
     redirToggle.id = 'redirToggle';
     redirToggle.type = 'checkbox';
-    redirToggle.checked = result.ytmusic_search_redirection ?? true;
+    redirToggle.checked = result.ytmusic_search_redirection ?? false;
     redirToggleWrapper.insertBefore(redirToggle, redirToggleWrapper.firstChild);
 
     redirToggle.addEventListener('change', function (event) {
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const playlistsToggle = document.createElement('input');
     playlistsToggle.id = 'playlistsToggle';
     playlistsToggle.type = 'checkbox';
-    playlistsToggle.checked = result.playlists_button ?? true;
+    playlistsToggle.checked = result.playlists_button ?? false;
     playlistsToggleWrapper.insertBefore(playlistsToggle, playlistsToggleWrapper.firstChild);
 
     playlistsToggle.addEventListener('change', function (event) {
