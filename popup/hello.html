@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Popup</title>
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+    <div class="toggles-group">
+      <div class="toggle-wrapper">
+        <div class="toggle-label">YTMusic Search Redirect</div>
+        <div class="checkbox-wrapper">
+          <div class="check" id="redir-toggle-wrapper">
+            <label for="redirToggle"></label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="toggle-wrapper">
+        <div class="toggle-label">Playlists Button</div>
+        <div class="checkbox-wrapper">
+          <div class="check" id="playlists-toggle-wrapper">
+            <label for="playlistsToggle"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="input-group">
+        <label class="playlist-id-label">Playlist ID</label>
+        <input
+          autocomplete="off"
+          name="playlist-id"
+          id="playlist-id"
+          class="playlist-id-input"
+          type="text"
+        />
+      </div>
+      <div class="playlist-id-label">(leave blank to display the button on all videos)</div>
+    </div>
+  </body>
+</html>
